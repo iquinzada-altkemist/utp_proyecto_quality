@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./public/vendor/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./public/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="shortcut icon" href="./public/img/qMT_clear.png" type="image/x-icon">
     <title>Quality Measurement Tool</title>
 </head>
 <body>
@@ -29,7 +30,8 @@
                     <a class="nav-link" href="#">Interna</a>
                 </li>
             </ul>
-            <span class="navbar-text text-white">Bienvenid@, Sr. Usuario</span>
+            <span class="navbar-text text-white">Bienvenid@, Sr. Usuario&nbsp; | </span>
+            <span class="navbar-text text-white">&nbsp; <a href="index.html">Cerrar Sesión</a></span>
         </div>  
       </nav>
 
@@ -38,12 +40,14 @@
         <div class="row mt-3 mb-3">
             <div class="col-xl-2">
                 <ul class="list-group list-group-flush">
-                    <a href="eficacia.html" class="list-group-item list-group-item-action">Eficacia</a>
-                    <a href="productividad.html" class="list-group-item list-group-item-action">Productividad</a>
-                    <a href="satisfaccion.html" class="list-group-item list-group-item-action active">Satisfacción</a>
-                    <a href="seguridad.html" class="list-group-item list-group-item-action">Seguridad</a>
-                    <a href="reporte.html" class="list-group-item list-group-item-action">Reporte de la evaluación</a>
+                    <a href="eficacia.html" class="list-group-item list-group-item-action"><i class="fa fa-external-link-square" aria-hidden="true"></i>&nbsp;Eficacia</a>
+                    <a href="productividad.html" class="list-group-item list-group-item-action"><i class="fa fa-tasks" aria-hidden="true"></i>&nbsp;Productividad</a>
+                    <a href="satisfaccion.html" class="list-group-item list-group-item-action active"><i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;Satisfacción</a>
+                    <a href="seguridad.html" class="list-group-item list-group-item-action"><i class="fa fa-shield" aria-hidden="true"></i>&nbsp;Seguridad</a>
+                    <a href="reporte.html" class="list-group-item list-group-item-action"><i class="fa fa-bar-chart" aria-hidden="true"></i>&nbsp;Reporte de la evaluación</a>
+                    <a href="ayuda.html" class="list-group-item list-group-item-action"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;Ayuda</a>
                 </ul>
+                <img src="./public/img/qMT_clear.png" class="w-100 mt-3"/>
             </div>
             <div class="col">
                 <div class="alert alert-info" role="alert">
@@ -55,66 +59,66 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
-                                    <label for="tarea1">Realiza las tareas en un tiempo óptimo:</label>
+                                    <label for="tarea1">Todas las características son útiles para el usuario:</label>
                                     <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea1" oninput="amount1.value=tarea1.value">
                                     <output id="amount1" name="amount" for="rangeInput">0</output>
                                 </div>
                                 <div class="form-group">
-                                    <label for="tarea2">Los componentes del software son rentables:</label>
+                                    <label for="tarea2">La cantidad de problemas reportados es mínima:</label>
                                     <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea2" oninput="amount2.value=tarea2.value">
                                     <output id="amount2" name="amount" for="rangeInput">0</output>
                                 </div>
                                 <div class="form-group">
-                                    <label for="tarea3">No posee acciones innecesarias:</label>
+                                    <label for="tarea3">La mayoría de las reseñas son positivas:</label>
                                     <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea3" oninput="amount3.value=tarea3.value">
                                     <output id="amount3" name="amount" for="rangeInput">0</output>
                                 </div>
                                 <div class="form-group">
-                                    <label for="tarea4">El diseño de la aplicación no causa cansancio:</label>
+                                    <label for="tarea4">Se resuelven todas o casi todas las necesidades iniciales del usuario:</label>
                                     <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea4" oninput="amount4.value=tarea4.value">
                                     <output id="amount4" name="amount" for="rangeInput">0</output>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-group">
-                                    <label for="tarea5">Los menús conducen al lugar correcto:</label>
+                                    <label for="tarea5">La comunicación del usuario y el servicio técnico es eficiente:</label>
                                     <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea5" oninput="amount5.value=tarea5.value">
                                     <output id="amount5" name="amount" for="rangeInput">0</output>
                                 </div>
                                 <div class="form-group">
-                                    <label for="tarea6">Posee comandos para que el usuario experto trabaje más rápido:</label>
+                                    <label for="tarea6">El personal de soporte técnico se encuentra disponible cuando el usuario lo necesita:</label>
                                     <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea6" oninput="amount6.value=tarea6.value">
                                     <output id="amount6" name="amount" for="rangeInput">0</output>
                                 </div>
                                 <div class="form-group">
-                                    <label for="tarea7">Realiza las tareas con la menor cantidad de procesos posibles:</label>
+                                    <label for="tarea7">La aplicación o servicio cuenta con una sección de sugerencias:</label>
                                     <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea7" oninput="amount7.value=tarea7.value">
                                     <output id="amount7" name="amount" for="rangeInput">0</output>
                                 </div>
                                 <div class="form-group">
-                                    <label for="tarea8">Permite la recuperación posterior a un error:</label>
+                                    <label for="tarea8">Todas las acciones llevadas a cabo por el usuario cuentan con un respaldo:</label>
                                     <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea8" oninput="amount8.value=tarea8.value">
                                     <output id="amount8" name="amount" for="rangeInput">0</output>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-group">
-                                    <label for="tarea9">Los menús y botones respetan el mismo diseño en todas las pantallas:</label>
+                                    <label for="tarea9">El tiempo en que se realizan las tareas es el adecuado:</label>
                                     <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea9" oninput="amount9.value=tarea9.value">
                                     <output id="amount9" name="amount" for="rangeInput">0</output>
                                 </div>
                                 <div class="form-group">
-                                    <label for="tarea10">La información se muestra en el momento que el usuario la necesita:</label>
+                                    <label for="tarea10">Todas las acciones proporcionan un feedback al usuario de lo que está haciendo:</label>
                                     <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea10" oninput="amount10.value=tarea10.value">
                                     <output id="amount10" name="amount" for="rangeInput">0</output>
                                 </div>
                                 <div class="form-group">
-                                    <label for="tarea11">Los tiempos de carga son reducidos o inexistentes:</label>
+                                    <label for="tarea11">Las acciones peligrosas cuentan con su debida alerta informativa:</label>
                                     <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea11" oninput="amount11.value=tarea11.value">
                                     <output id="amount11" name="amount" for="rangeInput">0</output>
                                 </div>
                                 <div class="form-group">
-                                    <label for="tarea12">Consume una baja cantidad de recursos del computador:</label>
+                                    <label for="tarea12">Se le solicita confirmación al usuario antes de borrar algo:</label>
                                     <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea12" oninput="amount12.value=tarea12.value">
                                     <output id="amount12" name="amount" for="rangeInput">0</output>
                                 </div>
