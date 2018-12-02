@@ -53,80 +53,36 @@
                 <div class="alert alert-info" role="alert">
                     <h3>Reporte de la Evaluación</h3>
                 </div>
-                <small style="color:red; font-weight: bold">* 0 Si no aplica, -1 si no se cumple, 1 si lo cumple</small><br>
+                
                 <form>
                     <div class="container-fluid border rounded border-dark pt-3 pb-3">
                         <div class="row">
                             <div class="col">
-                                <div class="form-group">
-                                    <label for="tarea1">No cuenta con enlaces:</label>
-                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea1" oninput="amount1.value=tarea1.value">
-                                    <output id="amount1" name="amount" for="rangeInput">0</output>
-                                </div>
-                                <div class="form-group">
-                                    <label for="tarea2">Los componentes del software son rentables:</label>
-                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea2" oninput="amount2.value=tarea2.value">
-                                    <output id="amount2" name="amount" for="rangeInput">0</output>
-                                </div>
-                                <div class="form-group">
-                                    <label for="tarea3">No posee acciones innecesarias:</label>
-                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea3" oninput="amount3.value=tarea3.value">
-                                    <output id="amount3" name="amount" for="rangeInput">0</output>
-                                </div>
-                                <div class="form-group">
-                                    <label for="tarea4">El diseño de la aplicación no causa cansancio:</label>
-                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea4" oninput="amount4.value=tarea4.value">
-                                    <output id="amount4" name="amount" for="rangeInput">0</output>
-                                </div>
+                                Promedios porcentuales individuales
+                                <canvas id="myChart" class="w-100" height="400"></canvas>
                             </div>
                             <div class="col">
-                                <div class="form-group">
-                                    <label for="tarea5">Los menús conducen al lugar correcto:</label>
-                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea5" oninput="amount5.value=tarea5.value">
-                                    <output id="amount5" name="amount" for="rangeInput">0</output>
-                                </div>
-                                <div class="form-group">
-                                    <label for="tarea6">Posee comandos para que el usuario experto trabaje más rápido:</label>
-                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea6" oninput="amount6.value=tarea6.value">
-                                    <output id="amount6" name="amount" for="rangeInput">0</output>
-                                </div>
-                                <div class="form-group">
-                                    <label for="tarea7">Realiza las tareas con la menor cantidad de procesos posibles:</label>
-                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea7" oninput="amount7.value=tarea7.value">
-                                    <output id="amount7" name="amount" for="rangeInput">0</output>
-                                </div>
-                                <div class="form-group">
-                                    <label for="tarea8">Permite la recuperación posterior a un error:</label>
-                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea8" oninput="amount8.value=tarea8.value">
-                                    <output id="amount8" name="amount" for="rangeInput">0</output>
-                                </div>
+                                Eficacia
+                                <canvas id="eficacia" class="w-100" height="400"></canvas>
                             </div>
                             <div class="col">
-                                <div class="form-group">
-                                    <label for="tarea9">Los menús y botones respetan el mismo diseño en todas las pantallas:</label>
-                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea9" oninput="amount9.value=tarea9.value">
-                                    <output id="amount9" name="amount" for="rangeInput">0</output>
-                                </div>
-                                <div class="form-group">
-                                    <label for="tarea10">La información se muestra en el momento que el usuario la necesita:</label>
-                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea10" oninput="amount10.value=tarea10.value">
-                                    <output id="amount10" name="amount" for="rangeInput">0</output>
-                                </div>
-                                <div class="form-group">
-                                    <label for="tarea11">Los tiempos de carga son reducidos o inexistentes:</label>
-                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea11" oninput="amount11.value=tarea11.value">
-                                    <output id="amount11" name="amount" for="rangeInput">0</output>
-                                </div>
-                                <div class="form-group">
-                                    <label for="tarea12">Consume una baja cantidad de recursos del computador:</label>
-                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea12" oninput="amount12.value=tarea12.value">
-                                    <output id="amount12" name="amount" for="rangeInput">0</output>
-                                </div>
+                                Productividad
+                                <canvas id="productividad" class="w-100" height="400"></canvas>
                             </div>
                         </div>
+                        <hr>
                         <div class="row">
                             <div class="col">
-                                <button type="button" class="btn btn-primary btn-lg btn-block" onclick="register()">Registrar</button>
+                                Satisfacción
+                                <canvas id="satisfaccion" class="w-100" height="400"></canvas>
+                            </div>
+                            <div class="col">
+                                Seguridad
+                                <canvas id="seguridad" class="w-100" height="400"></canvas>
+                            </div>
+                            <div class="col">
+                                Calidad del Producto
+                                <canvas id="calidad" class="w-100" height="400"></canvas>
                             </div>
                         </div>
                     </div>
@@ -166,6 +122,198 @@
     <!-- Scripts -->
     <script src="./public/vendor/jquery/jquery-3.3.1.min.js"></script>
     <script src="./public/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./public/vendor/chartjs/Chart.bundle.min.js"></script>
     <script src="./public/js/main.js"></script>
+    <script>
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Eficacia", "Productividad", "Satisfacción", "Seguridad"],
+                datasets: [{
+                    label: 'Puntuación general de la evaluación %',
+                    data: [89, 97, 78, 84],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+
+    <script>
+        var ctx = document.getElementById("eficacia").getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ["% Tareas completadas", "% Errores"],
+                datasets: [{
+                    label: 'Eficacia',
+                    data: [89, 11],
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(255, 99, 132, 1)',
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192,1)',
+                        'rgba(255, 99, 132, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+    <script>
+    var ctx = document.getElementById("productividad").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ["% Acciones realizadas de manera adecuada", "% Ineficiencia"],
+            datasets: [{
+                label: 'Productividad',
+                data: [97, 3],
+                backgroundColor: [
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(255, 99, 132, 1)',
+                ],
+                borderColor: [
+                    'rgba(75, 192, 192,1)',
+                    'rgba(255, 99, 132, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+    <script>
+    var ctx = document.getElementById("satisfaccion").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ["% Satisfacción del usuario", "% Acciones llevadas de manera incorrecta"],
+            datasets: [{
+                label: 'Satisfacción',
+                data: [78, 22],
+                backgroundColor: [
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(255, 99, 132, 1)',
+                ],
+                borderColor: [
+                    'rgba(75, 192, 192,1)',
+                    'rgba(255, 99, 132, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+    <script>
+    var ctx = document.getElementById("seguridad").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ["% Seguridad", "% Acciones inseguras"],
+            datasets: [{
+                label: 'Seguridad',
+                data: [84, 16],
+                backgroundColor: [
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(255, 99, 132, 1)',
+                ],
+                borderColor: [
+                    'rgba(75, 192, 192,1)',
+                    'rgba(255, 99, 132, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+    <script>
+    var ctx = document.getElementById("calidad").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ["% Calidad del producto", "% Acciones que necesitan corrección"],
+            datasets: [{
+                label: 'Calidad',
+                data: [87, 13],
+                backgroundColor: [
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(255, 99, 132, 1)',
+                ],
+                borderColor: [
+                    'rgba(75, 192, 192,1)',
+                    'rgba(255, 99, 132, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
 </body>
 </html>
