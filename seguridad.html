@@ -38,62 +38,85 @@
         <div class="row mt-3 mb-3">
             <div class="col-xl-2">
                 <ul class="list-group list-group-flush">
-                    <a href="eficacia.html" class="list-group-item list-group-item-action active">Eficacia</a>
+                    <a href="eficacia.html" class="list-group-item list-group-item-action">Eficacia</a>
                     <a href="productividad.html" class="list-group-item list-group-item-action">Productividad</a>
                     <a href="satisfaccion.html" class="list-group-item list-group-item-action">Satisfacción</a>
-                    <a href="seguridad.html" class="list-group-item list-group-item-action">Seguridad</a>
+                    <a href="seguridad.html" class="list-group-item list-group-item-action active">Seguridad</a>
                     <a href="reporte.html" class="list-group-item list-group-item-action">Reporte de la evaluación</a>
                 </ul>
             </div>
             <div class="col">
                 <div class="alert alert-info" role="alert">
-                    <h3>Medición de la Eficacia</h3>
+                    <h3>Medición de la Seguridad</h3>
                 </div>
                 <small style="color:red; font-weight: bold">* 0 Si no aplica, -1 si no se cumple, 1 si lo cumple</small><br>
                 <form>
                     <div class="container-fluid border rounded border-dark pt-3 pb-3">
                         <div class="row">
-                            <div class="col-sm-3">
+                            <div class="col">
                                 <div class="form-group">
-                                    <label for="tarea">Tareas completadas:</label>
-                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea" oninput="amount.value=tarea.value">
-                                    <output id="amount" name="amount" for="rangeInput">0</output>
+                                    <label for="tarea1">Realiza las tareas en un tiempo óptimo:</label>
+                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea1" oninput="amount1.value=tarea1.value">
+                                    <output id="amount1" name="amount" for="rangeInput">0</output>
                                 </div>
                                 <div class="form-group">
-                                    <label for="tarea2">Objetivos cumplidos:</label>
+                                    <label for="tarea2">Los componentes del software son rentables:</label>
                                     <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea2" oninput="amount2.value=tarea2.value">
                                     <output id="amount2" name="amount" for="rangeInput">0</output>
                                 </div>
                                 <div class="form-group">
-                                    <label for="tarea3">Tareas con errores:</label>
+                                    <label for="tarea3">No posee acciones innecesarias:</label>
                                     <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea3" oninput="amount3.value=tarea3.value">
                                     <output id="amount3" name="amount" for="rangeInput">0</output>
                                 </div>
+                                <div class="form-group">
+                                    <label for="tarea4">El diseño de la aplicación no causa cansancio:</label>
+                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea4" oninput="amount4.value=tarea4.value">
+                                    <output id="amount4" name="amount" for="rangeInput">0</output>
+                                </div>
                             </div>
                             <div class="col">
-                                <div class="form-group row">
-                                    <label for="tarea" class="col-sm-5 col-form-label">Número de tareas funcionales:</label>
-                                    <div class="col-sm-1"><input type="number" value="0"></div>
+                                <div class="form-group">
+                                    <label for="tarea5">Los menús conducen al lugar correcto:</label>
+                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea5" oninput="amount5.value=tarea5.value">
+                                    <output id="amount5" name="amount" for="rangeInput">0</output>
                                 </div>
-                                <div class="form-group row">
-                                    <label for="tarea" class="col-sm-5 col-form-label">Número de tareas funcionales cumplidas:</label>
-                                    <div class="col-sm-1"><input type="number" value="0"></div>
+                                <div class="form-group">
+                                    <label for="tarea6">Posee comandos para que el usuario experto trabaje más rápido:</label>
+                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea6" oninput="amount6.value=tarea6.value">
+                                    <output id="amount6" name="amount" for="rangeInput">0</output>
                                 </div>
-                                <div class="form-group row">
-                                    <label for="tarea" class="col-sm-5 col-form-label">Número de objetivos:</label>
-                                    <div class="col-sm-1"><input type="number" value="0"></div>
+                                <div class="form-group">
+                                    <label for="tarea7">Realiza las tareas con la menor cantidad de procesos posibles:</label>
+                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea7" oninput="amount7.value=tarea7.value">
+                                    <output id="amount7" name="amount" for="rangeInput">0</output>
                                 </div>
-                                <div class="form-group row">
-                                    <label for="tarea" class="col-sm-5 col-form-label">Número de objetivos cumplidos:</label>
-                                    <div class="col-sm-1"><input type="number" value="0"></div>
+                                <div class="form-group">
+                                    <label for="tarea8">Permite la recuperación posterior a un error:</label>
+                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea8" oninput="amount8.value=tarea8.value">
+                                    <output id="amount8" name="amount" for="rangeInput">0</output>
                                 </div>
-                                <div class="form-group row">
-                                    <label for="tarea" class="col-sm-5 col-form-label">Número de errores encontrados:</label>
-                                    <div class="col-sm-1"><input type="number" value="0"></div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="tarea9">Los menús y botones respetan el mismo diseño en todas las pantallas:</label>
+                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea9" oninput="amount9.value=tarea9.value">
+                                    <output id="amount9" name="amount" for="rangeInput">0</output>
                                 </div>
-                                <div class="form-group row">
-                                    <label for="tarea" class="col-sm-5 col-form-label">Número de errores graves encontrados:</label>
-                                    <div class="col-sm-1"><input type="number" value="0"></div>
+                                <div class="form-group">
+                                    <label for="tarea10">La información se muestra en el momento que el usuario la necesita:</label>
+                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea10" oninput="amount10.value=tarea10.value">
+                                    <output id="amount10" name="amount" for="rangeInput">0</output>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tarea11">Los tiempos de carga son reducidos o inexistentes:</label>
+                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea11" oninput="amount11.value=tarea11.value">
+                                    <output id="amount11" name="amount" for="rangeInput">0</output>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tarea12">Consume una baja cantidad de recursos del computador:</label>
+                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea12" oninput="amount12.value=tarea12.value">
+                                    <output id="amount12" name="amount" for="rangeInput">0</output>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +131,6 @@
         </div>
     </div>
     
-
     <!-- Modal -->
     <div class="modal" id="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -129,7 +151,7 @@
     <!-- Footer -->
     <footer class="bg-dark">
         <!-- Copyright-->
-        <div class="footer-copyright bg-black py-3 text-white text-center fixed-bottom">
+        <div class="footer-copyright bg-black py-3 text-white text-center ">
             © 2018 Copyright:
                 <span class="font-weight-bold">1LS - 141</span>
             <br>Domínguez, Eric | Gutiérrez, Joel | Mendoza,Jesús  | Quinzada, Isaac | Samudio, Maureth
