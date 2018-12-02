@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/vendor/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./public/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>Quality Measurement Tool</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-black">
+        <a class="navbar-brand" href="#">Herramienta de Medición de Calidad</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="eficacia.html">Calidad en Uso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Externa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Interna</a>
+                </li>
+            </ul>
+            <span class="navbar-text text-white">Bienvenid@, Sr. Usuario</span>
+        </div>  
+      </nav>
+
+    <!-- Cuerpo -->
+    <div class="container-fluid">
+        <div class="row mt-3 mb-3">
+            <div class="col-xl-2">
+                <ul class="list-group list-group-flush">
+                    <a href="eficacia.html" class="list-group-item list-group-item-action active">Eficacia</a>
+                    <a href="productividad.html" class="list-group-item list-group-item-action">Productividad</a>
+                    <a href="satisfaccion.html" class="list-group-item list-group-item-action">Satisfacción</a>
+                    <a href="seguridad.html" class="list-group-item list-group-item-action">Seguridad</a>
+                    <a href="reporte.html" class="list-group-item list-group-item-action">Reporte de la evaluación</a>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="alert alert-info" role="alert">
+                    <h3>Medición de la Eficacia</h3>
+                </div>
+                <small style="color:red; font-weight: bold">* 0 Si no aplica, -1 si no se cumple, 1 si lo cumple</small><br>
+                <form>
+                    <div class="container-fluid border rounded border-dark pt-3 pb-3">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label for="tarea">Tareas completadas:</label>
+                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea" oninput="amount.value=tarea.value">
+                                    <output id="amount" name="amount" for="rangeInput">0</output>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tarea2">Objetivos cumplidos:</label>
+                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea2" oninput="amount2.value=tarea2.value">
+                                    <output id="amount2" name="amount" for="rangeInput">0</output>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tarea3">Tareas con errores:</label>
+                                    <input type="range" value="0" min="-1" max="1" class="form-control-range" id="tarea3" oninput="amount3.value=tarea3.value">
+                                    <output id="amount3" name="amount" for="rangeInput">0</output>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group row">
+                                    <label for="tarea" class="col-sm-5 col-form-label">Número de tareas funcionales:</label>
+                                    <div class="col-sm-1"><input type="number" value="0"></div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="tarea" class="col-sm-5 col-form-label">Número de tareas funcionales cumplidas:</label>
+                                    <div class="col-sm-1"><input type="number" value="0"></div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="tarea" class="col-sm-5 col-form-label">Número de objetivos:</label>
+                                    <div class="col-sm-1"><input type="number" value="0"></div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="tarea" class="col-sm-5 col-form-label">Número de objetivos cumplidos:</label>
+                                    <div class="col-sm-1"><input type="number" value="0"></div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="tarea" class="col-sm-5 col-form-label">Número de errores encontrados:</label>
+                                    <div class="col-sm-1"><input type="number" value="0"></div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="tarea" class="col-sm-5 col-form-label">Número de errores graves encontrados:</label>
+                                    <div class="col-sm-1"><input type="number" value="0"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-primary btn-lg btn-block">Registrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>     
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="bg-dark">
+        <!-- Copyright-->
+        <div class="footer-copyright bg-black py-3 text-white text-center fixed-bottom">
+            © 2018 Copyright:
+                <span class="font-weight-bold">1LS - 141</span>
+            <br>Domínguez, Eric | Gutiérrez, Joel | Mendoza,Jesús  | Quinzada, Isaac | Samudio, Maureth
+        </div>
+        <!--/.Copyright -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./public/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="./public/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./public/js/main.js"></script>
+</body>
+</html>

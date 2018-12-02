@@ -1,0 +1,78 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Quality Measurement Tool</title>
+  <link rel="stylesheet" href="./public/vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./public/vendor/font-awesome-4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./public/css/style.css" />
+</head>
+
+<body class="bg-secondary">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black"><a class="navbar-brand" href="#">Herramienta de Medición de Calidad</a></nav>
+  <div class="container-fluid">
+    <div class="row mt-3">
+      <div class="col-sm-5 offset-sm-1 bg-white pb-3 pt-3">
+        <form method="post" action="eficacia.html">
+          <fieldset class="border border-dark">
+            <h3>Registrarse</h3>
+            <h6>¡Únete y sé parte de nuestra comunidad!</h6>
+            <h6 style="color:blue;"></h6>
+            <div class="form-group">
+              <label for="emailr">Correo Electrónico</label>
+              <input class="form-control" id="emailr" type="email" name="email" required="" placeholder="Introduzca su correo" />
+            </div>
+            <div class="form-group">
+              <label for="username">Nombre de Usuario</label>
+              <input class="form-control" id="username" type="text" name="username" required="" maxlength="20" placeholder="Introduzca un nombre de usuario" />
+            </div>
+            <div class="form-group">
+              <label for="password">Contraseña</label>
+              <input class="form-control" id="password" type="password" name="password" required="" maxlength="32" placeholder="Introduzca una contraseña" />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input class="form-control" id="telefono" type="text" name="tel" required="" maxlength="20" placeholder="Introduzca un teléfono" />
+            </div>
+            <button class="btn btn-primary btn-right" type="submit">Unirse</button><small class="text-justify">Al hacer clic en "Unirse", aceptas <a href="#">Términos de Servicio</a> y la <a href="#">Política de Privacidad</a>.</small>
+          </fieldset>
+        </form>
+      </div>
+      <div class="col-sm-5 bg-white pb-3 pt-3">
+        <form method="post" action="eficacia.html">
+          <fieldset class="border border-dark">
+            <h3>Iniciar Sesión</h3>
+            <h6>¿Ya tienes una cuenta? Inicia sesión más abajo.</h6>
+            <h6 style="color:blue;"></h6>
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input class="form-control" id="email" type="email" name="email" required="" aria-describedby="email" placeholder="Introduzca su correo" />
+            </div>
+            <div class="form-group">
+              <label for="pass">Contraseña</label><a href="#" style="float: right;">¿Olvidó su contraseña?</a>
+              <input class="form-control" id="pass" type="password" name="password" required="" placeholder="Introduzca su contraseña" />
+            </div>
+            <small class="text-justify">¿Problemas iniciando sesión? Confirme que su navegador tenga activados los cookies y el javascript.</small>
+            <br><br><br><br><br><br><button class="btn btn-primary btn-right" type="submit">Iniciar Sesión</button>
+        </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./public/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./public/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Footer-->
+  <!-- Footer -->
+  <footer class="bg-dark">
+        <!-- Copyright-->
+        <div class="footer-copyright bg-black py-3 text-white text-center fixed-bottom">
+            © 2018 Copyright:
+                <span class="font-weight-bold">1LS - 141</span>
+            <br>Domínguez, Eric | Gutiérrez, Joel | Mendoza,Jesús  | Quinzada, Isaac | Samudio, Maureth
+        </div>
+        <!--/.Copyright -->
+    </footer>
+</body>
+
+</html>
